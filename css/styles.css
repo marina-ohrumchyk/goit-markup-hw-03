@@ -1,3 +1,13 @@
+/* html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+} */
+
 :root {
   --primary-text-color: #757575;
   --secondary-tex-color: #212121;
@@ -9,6 +19,22 @@
   --card-text-color: #757575;
   --color-active: #188ce8;
   --color-fon-team: #f5f4fa;
+}
+
+* {
+  outline: 1px solid tomato;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -23,6 +49,16 @@ body {
 .list {
   list-style: none;
 }
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* heder */
+
 /* logo */
 
 .logo {
@@ -77,13 +113,25 @@ body {
 /* hero */
 
 .section-hero {
+  text-align: center;
+  width: 1600px;
+  padding-left: 452px;
+  padding-right: 452px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  margin-left: auto;
+  margin-right: auto;
+
   background-color: var(--footer-color);
 }
 
 .hero-title {
+  margin: 0px 0px 30px;
+
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.37;
+  line-height: 1.4;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -111,6 +159,10 @@ body {
 }
 
 /* section */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .section-title {
   font-weight: 700;
@@ -121,6 +173,9 @@ body {
   color: var(--secondary-tex-color);
 }
 
+.title {
+  margin-bottom: 10px;
+}
 .features-list .title {
   font-weight: 700;
   font-size: 14px;
@@ -136,6 +191,8 @@ body {
 }
 
 .team-title {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -160,6 +217,8 @@ body {
 }
 
 .footer-logo {
+  margin-bottom: 20px;
+
   font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -174,6 +233,8 @@ body {
 }
 
 .address-link {
+  margin-bottom: 9px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -190,6 +251,8 @@ body {
 
 /* section work */
 .work-title {
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
