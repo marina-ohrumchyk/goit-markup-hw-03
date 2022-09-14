@@ -20,9 +20,10 @@
   --color-active: #188ce8;
   --color-fon-team: #f5f4fa;
   --color-border: #eeeeee;
-  --portfolio-border: #ececec;
+  --heder-border: #ececec;
   --color-box-shadow: rgba(0, 0, 0, 0.15);
   --color-text-shadow: rgba(0, 0, 0, 0.25);
+  --color-footer-link: rgba(255, 255, 255, 0.6);
 }
 
 /* * {
@@ -63,7 +64,7 @@ body {
 
 /* heder */
 .page-header {
-  border: 1px solid var(--portfolio-border);
+  border-bottom: 1px solid var(--heder-border);
 }
 
 /* logo */
@@ -293,6 +294,7 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background: var(--hero-color);
 }
 .item-team:last-child {
   margin-right: 0;
@@ -362,11 +364,11 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: var(--hero-color);
+  color: var(--color-footer-link);
 }
 .address-link:hover,
 .address-link:focus {
-  color: var(--link-color);
+  color: var(--hero-color);
 }
 
 /* portfolio */
@@ -439,7 +441,6 @@ body {
 .button-link:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
   background-color: var(--link-color);
   color: var(--hero-color);
 }
